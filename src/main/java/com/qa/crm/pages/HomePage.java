@@ -5,6 +5,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.qa.crm.Base.Base;
+import com.qa.crm.Utility.Utility;
 
 public class HomePage extends Base
 {
@@ -13,15 +14,15 @@ public class HomePage extends Base
 	WebElement username;
 	
     
-	@FindBy(linkText = "Contacts")
+	@FindBy(xpath = "//a[contains(text() , 'Contacts')]")
 	WebElement contact;
 	
     
-	@FindBy(linkText = "Deals")
+	@FindBy(xpath = "//a[contains(text() , 'Deals')]")
 	WebElement deals;
 	
     
-	@FindBy(linkText = "Tasks")
+	@FindBy(xpath = "//a[contains(text() , 'Tasks')]")
 	WebElement tasks;
 	
 	public HomePage ()

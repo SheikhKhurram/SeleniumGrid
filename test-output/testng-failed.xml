@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.crm.testcases.HomePageValidation">
+      <class name="com.qa.crm.testcases.NewContactPageValidation">
         <methods>
-          <include name="validating_userName_in_HomePage"/>
-          <include name="teraDown"/>
+          <include name="creatingContact"/>
           <include name="setUp"/>
+          <include name="teraDown"/>
         </methods>
-      </class> <!-- com.qa.crm.testcases.HomePageValidation -->
+      </class> <!-- com.qa.crm.testcases.NewContactPageValidation -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
